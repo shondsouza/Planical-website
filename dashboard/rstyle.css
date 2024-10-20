@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffffff, #4CAF50);
+  /* Gradient from white to green */
+  color: #232020;
+  /* Dark text for readability */
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+}
+
+header {
+  background-color: #4CAF50;
+  /* Green header */
+  color: #ffffff;
+  /* White text */
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  /* Enhanced shadow */
+}
+
+nav a {
+  color: #ffffff;
+  /* White links */
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* Smooth transition */
+}
+
+nav a:hover {
+  color: #d1e0d1;
+  /* Lighter green on hover */
+  transform: scale(1.1);
+  /* Slightly enlarge */
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  /* Enhanced shadow effect */
+  transition: transform 0.3s ease;
+  /* Smooth transition */
+}
+
+section:hover {
+  transform: translateY(-5px);
+  /* Lift effect on hover */
+}
+
+h1,
+h2 {
+  color: #4CAF50;
+  /* Green headings */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  /* Green button */
+  color: #ffffff;
+  /* White text */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Smooth transition */
+}
+
+.button:hover {
+  background-color: #45a049;
+  /* Darker green on hover */
+  transform: scale(1.05);
+  /* Slightly enlarge */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  /* Green footer */
+  color: #ffffff;
+  /* White text */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+  /* Shadow on top of footer */
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #4CAF50;
+  /* Green border */
+  transition: border-color 0.3s ease;
+  /* Smooth transition */
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #388e3c;
+  /* Darker green on focus */
+}
+
+form button {
+  background-color: #4CAF50;
+  /* Green button */
+  color: #ffffff;
+  /* White text */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Smooth transition */
+}
+
+form button:hover {
+  background-color: #45a049;
+  /* Darker green on hover */
+}
+
+.foot {
+  color: white;
+  /* White text for footer */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav a {
+    font-size: 16px;
+    /* Adjust font size on smaller screens */
+  }
+
+  section {
+    margin: 10px;
+    /* Reduce margin on smaller screens */
+    padding: 15px;
+    /* Reduce padding on smaller screens */
+  }
+}
