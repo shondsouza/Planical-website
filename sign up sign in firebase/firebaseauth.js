@@ -5,13 +5,9 @@
  
  const firebaseConfig = {
  //YOUR COPIED FIREBASE PART SHOULD BE HERE
- apiKey: "AIzaSyDtx2HNZ_8xNpQzfi0GpsR4Lv6N8q3CP9c",
- authDomain: "login-form-fa3f0.firebaseapp.com",
- projectId: "login-form-fa3f0",
- storageBucket: "login-form-fa3f0.appspot.com",
- messagingSenderId: "474715348760",
- appId: "1:474715348760:web:e97e03057605e258c5086d",
- measurementId: "G-BZ38Z23B8G"
+
+
+  
  //WATCH THIS VIDEO TO LEARN WHAT TO PUT HERE   https://youtu.be/_Xczf06n6x0
  };
 
