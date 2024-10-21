@@ -18,3 +18,5 @@ Backend: Node.js with Express.js to manage API requests and chat functionality.
 Database: Firebase Firestore for real-time data management.
 AI Chatbot: Dialogflow (or any other AI solution) for natural language processing and chatbot conversations.
 # npm-web
+
+https://github.com/user-attachments/assets/657c3849-a00c-4f49-9817-6dc367e389f0
