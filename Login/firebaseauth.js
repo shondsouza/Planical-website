@@ -4,11 +4,7 @@
  import{getFirestore, setDoc, doc} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js"
  
  const firebaseConfig = {
- //YOUR COPIED FIREBASE PART SHOULD BE HERE
-
-
-  
- //WATCH THIS VIDEO TO LEARN WHAT TO PUT HERE   https://youtu.be/_Xczf06n6x0
+ 
  };
 
  // Initialize Firebase
