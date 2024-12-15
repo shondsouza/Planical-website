@@ -1,13 +1,20 @@
-const signUpButton=document.getElementById('signUpButton');
-const signInButton=document.getElementById('signInButton');
-const signInForm=document.getElementById('signIn');
-const signUpForm=document.getElementById('signup');
+const wrapper = document.querySelector('.wrapper');
+const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
+const bthPopup = document.querySelector('.bthLogin-popup');
+const iconClose = document.querySelector('.icon-close');
 
-signUpButton.addEventListener('click',function(){
-    signInForm.style.display="none";
-    signUpForm.style.display="block";
-})
-signInButton.addEventListener('click', function(){
-    signInForm.style.display="block";
-    signUpForm.style.display="none";
-})
+registerLink.addEventListener('click', () => wrapper.classList.add('active'));
+loginLink.addEventListener('click', () => wrapper.classList.remove('active'));
+bthPopup.addEventListener('click', () => wrapper.classList.add('active-popup'));
+iconClose.addEventListener('click', () => wrapper.classList.remove('active-popup'));
+// Show the quote box on page load
+window.onload = function () {
+    const quoteBox = document.getElementById("quoteBox");
+    quoteBox.style.display = "block"; // Show the box
+
+    // Hide it after 5 seconds
+    setTimeout(function () {
+        quoteBox.style.display = "none";
+    }, 20000); 
+};
