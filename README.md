@@ -10,7 +10,7 @@ Self-Help Books: A library of self-help books that users can access to improve t
 Live Doctor-Client Chat: Users can engage in real-time conversations with mental health professionals. This feature ensures secure, private communication between doctors and clients, fostering effective mental health support.
 4. AI Chatbot
 AI Chatbot for Support: The platform integrates an AI chatbot to answer frequently asked questions (FAQs) related to mental health. This AI assistant offers immediate support and guidance, making it accessible 24/7 for users needing quick advice.
-5. Login Page
+5. Login Functionality: Users can securely log in to the platform using their credentials through the login page.
 
 User Authentication: Users can create accounts or log in to the platform. This feature ensures secure access to personalized features such as chat history and saved resources.
 
