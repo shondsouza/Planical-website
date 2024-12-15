@@ -13,7 +13,7 @@ AI Chatbot for Support: The platform integrates an AI chatbot to answer frequent
 5. Login Page
 
 User Authentication: Users can create accounts or log in to the platform. This feature ensures secure access to personalized features such as chat history and saved resources.
-Tech Stack
+
 
 Frontend: HTML, CSS, JavaScript.
 Backend: Node.js with Express.js to manage API requests and chat functionality.
