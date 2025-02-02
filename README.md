@@ -93,12 +93,7 @@ FIREBASE_APP_ID=your_app_id
 - Regular security audits are performed
 - Compliance with healthcare data protection standards
 
-## 📋 Prerequisites
 
-- Node.js (v14 or higher)
-- npm (v6 or higher)
-- Firebase account
-- Modern web browser
 
 ## 🤝 Contributing
 
