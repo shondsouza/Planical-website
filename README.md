@@ -94,7 +94,6 @@ FIREBASE_APP_ID=your_app_id
 - Compliance with healthcare data protection standards
 
 
-
 ## 🤝 Contributing
 
 1. Fork the repository
