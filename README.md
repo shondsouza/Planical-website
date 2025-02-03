@@ -1,4 +1,4 @@
-#Planical
+## Planical
 ![Image](https://github.com/user-attachments/assets/ef1fd885-53ec-4dba-bd76-2b882f32bbb4)
 # Mental Health Support Platform
 
