@@ -1,6 +1,5 @@
-<div align="center">
 ![Image](https://github.com/user-attachments/assets/ef1fd885-53ec-4dba-bd76-2b882f32bbb4) 
-</div>
+
   # Mental Health Support Platform
 
 A comprehensive web-based platform designed to provide mental health support through multiple channels including professional consultation, self-help resources, and AI-powered assistance.
