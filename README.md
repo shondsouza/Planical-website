@@ -59,16 +59,6 @@ A comprehensive web-based platform designed to provide mental health support thr
 - CSS3
 - JavaScript
 
-### Backend
-- Node.js
-- Express.js
-- RESTful API architecture
-
-### Database
-- Firebase Firestore
-  - Real-time data synchronization
-  - Secure document storage
-  - Scalable infrastructure
 
 ## 🚀 Getting Started
 
