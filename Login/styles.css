@@ -1,289 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
-
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-size: cover;
-    background: url('./assets/background.png') no-repeat center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #121212;
+  color: #fff;
+  position: relative;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
+/* Added Navbar Styles */
+.navbar {
+  width: 100%;
+  padding: 1rem;
+  background: #1f1f1f;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
 }
 
-.logo img{
-    width: 150px; 
-    height: 100%;
+.nav-logo {
+  height: 40px;
+  width: auto;
 }
 
-.navigation a {
-    position: relative;
-    font-size: 1.1em;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
+.container {
+  background: #1f1f1f;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
 }
 
-.navigation a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background: #ffffff;
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .5s;
+/* Updated Checkbox Container */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;  /* Reduced margin */
+  position: relative;
+  top: -1px;  /* Move checkbox up slightly */
 }
 
-.navigation a:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+  margin-bottom: -1px;
+  width: auto;
 }
 
-.navigation .bthLogin-popup {
-    width: 130px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid #ffffff;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: #ffffff;
-    font-weight: 500;
-    margin-left: 40px;
-    transition: .5s;
+.checkbox-container label {
+  color: #ccc;
+  font-size: 0.9rem;
 }
 
-.navigation .bthLogin-popup:hover {
-    background: #ffffff;
-    color: #162938;
+/* Updated Footer Image Styles */
+.footer-image {
+  position: fixed;
+  bottom: -20px;  /* Adjust to move image slightly lower */
+  right: -140px;   /* Adjust to move image slightly more to the right */
+  z-index: 100;
+  pointer-events: none;  /* Prevents image from interfering with clicks */
 }
 
-.wrapper {
-    position: relative;
-    width: 400px;
-    height: 440px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .5);
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transform: scale(0);
-    transition: transform .5s ease, height .2s ease;
+.footer-image img {
+  width: 800px;  /* Adjusted size */
+  height: auto;
+  opacity: 0.9;  /* Optional: makes the image slightly transparent */
 }
 
-.wrapper.active-popup {
-    transform: scale(1);
+/* Rest of your existing styles remain the same */
+.form {
+  display: none;
 }
 
-.wrapper.active {
-    height: 520px;
+.form header {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #00e676;
 }
 
-.wrapper .form-box {
-    width: 100%;
-    padding: 40px;
+.form input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #2c2c2c;
+  color: #fff;
+  font-size: 1rem;
 }
 
-.wrapper .form-box.login {
-    transition: transfrom .18s ease;
-    transform: translateX(0);
+.form input:focus {
+  border-color: #00e676;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 230, 118, 0.5);
 }
 
-.wrapper.active .form-box.login {
-    transition: none;
-    transform: translateX(-400px);
+.form .button {
+  background: #00e676;
+  border: none;
+  color: #121212;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.wrapper .form-box.register {
-    position: absolute;
-    transition: none;
-    transform: translateX(400px);
+.form .button:hover {
+  background: #00c853;
 }
 
-.wrapper.active .form-box.register {
-    transition: transfrom .18s ease;
-    transform: translateX(0);
+.switch-form {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
 }
 
-.wrapper .icon-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45px;
-    height: 45px;
-    background: #162938;
-    font-size: 2em;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 20px;
-    cursor: pointer;
-    z-index: 1;
+.link {
+  color: #00e676;
+  text-decoration: none;
 }
 
-.form-box h2 {
-    font-size: 2em;
-    color: #162938;
-    text-align: center;
+.link:hover {
+  text-decoration: underline;
 }
 
-.input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid #162938;
-    margin: 30px 0;
+.login {
+  display: block;
 }
-
-.input-box label {
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    color: #162938;
-    font-weight: 500;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.input-box input:focus ~ label,
-.input-box input:valid ~ label {
-    top: -5px;
-}
-
-.input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    color: #162938;
-    font-weight: 600;
-    padding: 0 35px 0 5px;
-}
-
-.input-box .icon {
-    position: absolute;
-    right: 8px;
-    font-size: 1.2em;
-    color: #162938;
-    line-height: 57px;
-}
-
-.remember-forgot {
-    font-size: .9em;
-    color: #162938;
-    font-weight: 500;
-    margin: -15px 0 15px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.remember-forgot label input {
-    accent-color: #162938;
-    margin-right: 3px;
-}
-
-.remember-forgot a {
-    color: #162938;
-    text-decoration: none;
-}
-
-.remember-forgot a:hover {
-    text-decoration: underline;
-}
-
-.bth {
-    width: 100%;
-    height: 45px;
-    background: #162938;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1em;
-    color: #ffffff;
-    font-weight: 500;
-}
-
-.login-register {
-    font-size: .9em;
-    color: #162938;
-    text-align: center;
-    font-weight: 500;
-    margin: 25px 0 10px;
-}
-
-.login-register p a {
-    color: #162938;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.login-register p a:hover {
-    text-decoration: underline;
-
-}
-
-/* Main styles for the quote box */
-.quote-box {
-    position: fixed; /* Makes it appear over the screen */
-    top: 50%; /* Centers it vertically */
-    left: 50%; /* Centers it horizontally */
-    transform: translate(-50%, -50%); /* Adjusts to center perfectly */
-    background-color: #f0f8ff; /* Light blue background */
-    color: #333; /* Text color */
-    padding: 20px 40px; /* Adds space inside the box */
-    border: 2px solid #007bff; /* Border color */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 1.2rem;
-    font-style: italic;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a "pop-up" effect */
-    z-index: 1000; /* Ensures it appears on top */
-    animation: fadeOut 10s forwards; /* Triggers fade-out animation */
-    display: none; /* Hides it initially */
-}
-
-/* Fade-out animation */
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-
-

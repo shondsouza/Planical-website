@@ -1,104 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="firebaseauth.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login & Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h2 class="logo"><a href="homepage.html">
-        <img src="./assets/logo.png" alt="mindspace" class="logo">
-    </a></h2>
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="dashboard/homepage.html">About</a>
-        <a href="homepage.html">Services</a>
-        <a href="#">Contact</a>
-        <button class="bthLogin-popup">Login</button>
-    </nav>
-</header>
-<div class="quote-box" id="quoteBox">
-    <p>Healing begins the moment you decide to take the first step. You are not alone, and brighter days are ahead.</p>
-</div>
-<div class="wrapper">
-    <span class="icon-close">
-        <ion-icon name="close"></ion-icon>
-    </span>
-    <div class="form-box login">
-        <h2>Login</h2>
-        <form action="#">
-            <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="mail"></ion-icon>
-                </span>
-                <input type="email" required>
-                <label>Email</label>
-            </div>
-            <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="lock-closed"></ion-icon>
-                </span>
-                <input type="password" required>
-                <label>Password</label>
-            </div>
-            <div class="remember-forgot">
-                <label><input type="checkbox" required>
-                    Remember me</label>
-                <a href="#">Forgot Password?</a>
-            </div>
-            <button type="submit" class="bth">Login</button>
-            <div class="login-register">
-                <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
-            </div>
-        </form>
+  <!-- Added Logo in Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo" class="nav-logo">
     </div>
+  </nav>
 
-    <div class="form-box register">
-        <h2>Registration</h2>
-        <form action="#">
-            <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="person"></ion-icon>
-                </span>
-                <input type="text" required>
-                <label>Username</label>
-            </div>
-            <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="mail"></ion-icon>
-                </span>
-                <input type="email" required>
-                <label>Email</label>
-            </div>
-            <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="lock-closed"></ion-icon>
-                </span>
-                <input type="password" required>
-                <label>Password</label>
-            </div>
-            <div class="remember-forgot">
-                <label>
-                    <input type="checkbox" required>
-                    <a href="/Mindspace/Terms and Conditions/index.html" target="_blank">I agree to the terms & conditions</a>
-                </label>                
-            </div>
-            <button type="submit" class="bth">Register</button>
-            <div class="login-register">
-                <p>Already have an account? <a href="#" class="login-link">Login</a></p>
-            </div>
-        </form>
+  <div class="container">
+    <!-- Login Form -->
+    <div class="form login">
+      <header>Login</header>
+      <form action="#">
+        <input type="text" id='inUsr' placeholder="Enter your email">
+        <input type="password" id="inPass" placeholder="Enter your password">
+        <div class="checkbox-container">
+          <input type="checkbox" id="check">
+          <label for="check">Remember me</label>
+        </div>
+        <a href="#" id="forgotLabel" class="link">Forgot password?</a>
+        <input type="button" class="button loginbtn" value="Login">
+      </form>
+      <p class="switch-form">Don't have an account? <a href="#" id="signupLabel" class="link">Signup</a></p>
     </div>
-</div>
-<script src="script.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<!-- Firebase App -->
-<script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
-<!-- Firebase Database -->
-<script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js"></script>
+    
+    <!-- Registration Form - remains the same -->
+    <div class="form registration">
+      <header>Signup</header>
+      <form action="#">
+        <input type="text" id="name" placeholder="Enter your name">
+        <input type="text" id='username' placeholder="Enter your username">
+        <input type="text" id='email' placeholder="Enter your email">
+        <input type="password" id='password' placeholder="Create a password">
+        <input type="button" class="button signupbtn" value="Signup">
+      </form>
+      <p class="switch-form">Already have an account? <a href="#" id="loginLabel" class="link">Login</a></p>
+    </div>
+    
+    <!-- Forgot Password Form - remains the same -->
+    <div class="form forgot">
+      <header>Forgot Password</header>
+      <form action="#">
+        <input type="text" id='forgotinp' placeholder="Enter your email">
+        <input type="button" class="button forgotbtn" value="Submit">
+      </form>
+      <p class="switch-form">Don't have an account? <a href="#" id="signupLabel" class="link">Signup</a></p>
+      <p class="switch-form">Already have an account? <a href="#" id="loginLabel" class="link">Login</a></p>
+    </div>
+  </div>
 
+  <!-- Added Footer Image -->
+  <div class="footer-image">
+    <img src="photo.svg" alt="Footer Image">
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="page0.js" type="module"></script>
 </body>
 </html>
