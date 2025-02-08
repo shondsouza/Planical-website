@@ -52,12 +52,6 @@ A comprehensive web-based platform designed to provide mental health support thr
   - Secure login/logout functionality
   - Password recovery system
 
-## 🔧 Technical Stack
-
-### Frontend
-- HTML5
-- CSS3
-- JavaScript
 
 
 ## 🚀 Getting Started
