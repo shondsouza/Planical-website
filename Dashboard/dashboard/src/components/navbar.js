@@ -22,7 +22,7 @@ const Navbar = (props) => {
         <div className="navbar-nav-links1">
           <span className="navbar-link1 nav-link">Features</span>
           <span className="nav-link">Why us</span>
-          <span className="nav-link">Prices</span>
+          <span className="nav-link">Planical AI</span>
           <span className="nav-link">Contact</span>
         </div>
         <div className="get-started navbar-get-started1">

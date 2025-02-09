@@ -173,7 +173,7 @@ const Home = (props) => {
           <div className="home-image21">
             <img
               alt="image"
-              src="/SectionImages/group 1449.png"
+              src="/SectionImages/group 1499.png"
               className="home-image22"
             />
           </div>
@@ -181,7 +181,7 @@ const Home = (props) => {
             <main className="home-main4">
               <header className="home-caption4">
                 <span className="home-section14 section-head">
-                  Tempor incididunt
+                Your Mental Wellness, Our Priority
                 </span>
               </header>
               <main className="home-heading14">
@@ -190,14 +190,13 @@ const Home = (props) => {
                     Great care, wherever you are
                   </h2>
                   <p className="section-description">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium.
+                  Get instant support from our AI-powered mental health assistant, designed to help you manage stress, anxiety, and emotional well-being anytime, anywhere.
                   </p>
                 </header>
                 <div className="home-checkmarks">
                   <Mark></Mark>
-                  <Mark label="Quis nostrud exercitation ullamco"></Mark>
-                  <Mark label="Reprehenderit qui in ea voluptate velit"></Mark>
+                  <Mark label="Personalized support tailored to your emotions"></Mark>
+                  <Mark label="Evidence-based techniques for stress relief"></Mark>
                 </div>
               </main>
             </main>
@@ -241,7 +240,7 @@ const Home = (props) => {
           <div className="home-image23">
             <img
               alt="image"
-              src="/SectionImages/iphone 14 pro max.png"
+              src="/SectionImages/macbook.png"
               className="home-image24"
             />
           </div>

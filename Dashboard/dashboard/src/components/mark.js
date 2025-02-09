@@ -18,7 +18,7 @@ const Mark = (props) => {
 }
 
 Mark.defaultProps = {
-  label: 'Duis aute irure dolor in reprehenderit',
+  label: '24/7 availability for whenever you need help',
 }
 
 Mark.propTypes = {

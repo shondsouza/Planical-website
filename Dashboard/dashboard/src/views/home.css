@@ -451,7 +451,14 @@
     align-items: center;
     flex-direction: row;
     justify-content: center;
-  }
+}
+
+.home-image21 img {
+    width: 50%; /* Adjust this percentage as needed */
+    max-width: 300px; /* Set a max width to prevent it from being too large */
+    height: auto; /* Maintain aspect ratio */
+}
+
    
   .home-image22 {
     object-fit: cover;
@@ -612,8 +619,14 @@
     align-items: center;
     flex-direction: row;
     justify-content: center;
-  }
-   
+}
+
+.home-image23 img {
+    width: 100%; /* Adjust this percentage as needed */
+    max-width: 500px; /* Set a max width to prevent it from being too large */
+    height: auto; /* Maintain aspect ratio */
+    padding-left: 50px;
+}
   .home-image24 {
     object-fit: cover;
   }
