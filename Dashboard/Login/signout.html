@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Out</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body{
+      min-height: 100vh;
+      width: 100%;
+      background: #222D32; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #signoutbtn{
+      height: 50px;
+      padding: 0 15px;
+      font-size: 17px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      outline: none;
+      color: #fff; 
+      background: #009579;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+    #signoutbtn:hover{
+      background: #006653;
+    }
+  </style>
+</head>
+<body>
+  <input type="button" id="signoutbtn" value="Sign Out">
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="page1.js" type="module"></script>
+</body>
+</html>

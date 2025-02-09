@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindspace Chat App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Logo at the Top -->
+    <div class="logo__container">
+    </div>
+
+    <!-- Role Selection Section -->
+    <div id="role-selection" class="role__section">
+        <h1>Mindspace</h1> <!-- Added heading -->
+        <h2>Select Your Role</h2>
+        <button onclick="registerRole('doctor')">I am a Doctor</button>
+        <button onclick="registerRole('client')">I am a Client</button>
+    </div>
+
+    <!-- Room Selection Section -->
+    <div id="room-selection" class="room__section" style="display: none;">
+        <h1>Mindspace</h1> <!-- Added heading -->
+        <h2>Select a Room</h2>
+        <ul id="room-list">
+            <li><button onclick="selectRoom('room1')">Room 1</button></li>
+            <li><button onclick="selectRoom('room2')">Room 2</button></li>
+        </ul>
+    </div>
+
+    <!-- Chat Section -->
+    <section class="chat__section" style="display: none;">
+        <div class="brand">
+            <img height="40" src="/mindspace.png" alt="Mindspace Logo">
+            <h1>MindSpace</h1>
+        </div>
+        <div class="message__area"></div>
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="Write a message.."></textarea>
+        </div>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>

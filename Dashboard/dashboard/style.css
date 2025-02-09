@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:wght@100;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playwrite GB S', sans-serif;
+  color: #ffffff;
+}
+
+:root {
+  --prime: #ffffff;
+  /* White */
+  --dark: #1a1729;
+  /* Dark Green */
+  --light-green: #4CAF50;
+  /* Light Green */
+  --bg-gradient: linear-gradient(to right, #2E7D32, #66BB6A);
+  /* Green Gradient */
+}
+
+.container {
+  position: relative;
+  height: 150vh;
+  width: 100%;
+  background: var(--bg-gradient);
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  height: 120px;
+  width: 100%;
+  line-height: 120px;
+  justify-content: space-between;
+  padding: 0 100px;
+  z-index: 1111;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Semi-transparent white */
+  backdrop-filter: blur(10px);
+}
+
+.navbar .logo {
+  height: 100%;
+  scale: 0.5;
+}
+
+.logo a {
+  height: inherit;
+}
+
+.logo a img {
+  position: absolute;
+  filter: invert(1);
+  height: inherit;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  font-size: 25px;
+  gap: 2vw;
+}
+
+ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  color: var(--dark);
+  /* Dark Green */
+  transition: color 0.3s ease;
+}
+
+ul li a::after {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: var(--light-green);
+  /* Light Green */
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  transition: 0.1s ease;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+
+ul li a:hover {
+  color: var(--light-green);
+  /* Change text color on hover */
+}
+
+.loginbtn a {
+  text-decoration: none;
+}
+
+.loginbtn a i {
+  font-size: 1.2em;
+  margin-right: 0.4em;
+}
+
+.loginbtn a span {
+  font-size: 1.1em;
+  word-spacing: -3px;
+}
+
+.loginbtn a:hover i,
+.loginbtn a:hover span {
+  color: var(--dark);
+  transition: 0.1s ease-in;
+}
+
+.home {
+  min-height: 150vh;
+  display: grid;
+  position: relative;
+  align-items: center;
+  padding: 0 5vw;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.textarea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  margin-top: 1em;
+}
+
+.hero-title {
+  font-family: 'Playwrite GB S', sans-serif;
+  font-size: 10vw;
+  font-weight: 500;
+  line-height: 1em;
+  margin-bottom: 1em;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-title span {
+  font-size: 7vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--light-green);
+  /* Light Green */
+  animation: textshadow 5s ease;
+}
+
+@keyframes textshadow {
+  50% {
+    text-shadow: 0 0 150px var(--light-green);
+    /* Light Green glow */
+  }
+}
+
+.hero-desc1 {
+  margin-top: auto;
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+
+.imgdata1 {
+  position: relative;
+  top: 0%;
+  left: 10%;
+}
+
+.imgbox {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  height: 50%;
+  animation: scrollX
+}
+.loginbtn a {
+  text-decoration: none;
+  color: var(--dark); /* Dark green for button */
+  font-weight: bold;
+  background-color: var(--light-green); /* Light green button background */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.loginbtn a:hover {
+  background-color: #2E7D32; /* Darker green on hover */
+}
+
+/* Contact Us Section */
+.contact-us {
+  background-color: #f3f4f6;
+  padding: 3rem 5%;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+
+.contact-us h2 {
+  color: #2E7D32;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.contact-us p {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.contact-details {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.contact-details a {
+  color: #2E7D32;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #2E7D32;
+  outline: none;
+}
+
+.submit-btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1em;
+  background-color: #66BB6A;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2E7D32;
+}

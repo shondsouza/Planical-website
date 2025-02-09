@@ -1,0 +1,146 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #121212;
+  color: #fff;
+  position: relative;
+}
+
+/* Added Navbar Styles */
+.navbar {
+  width: 100%;
+  padding: 1rem;
+  background: #1f1f1f;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.nav-logo {
+  height: 40px;
+  width: auto;
+}
+
+.container {
+  background: #1f1f1f;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Updated Checkbox Container */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;  /* Reduced margin */
+  position: relative;
+  top: -1px;  /* Move checkbox up slightly */
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+  margin-bottom: -1px;
+  width: auto;
+}
+
+.checkbox-container label {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* Updated Footer Image Styles */
+.footer-image {
+  position: fixed;
+  bottom: -20px;  /* Adjust to move image slightly lower */
+  right: -140px;   /* Adjust to move image slightly more to the right */
+  z-index: 100;
+  pointer-events: none;  /* Prevents image from interfering with clicks */
+}
+
+.footer-image img {
+  width: 800px;  /* Adjusted size */
+  height: auto;
+  opacity: 0.9;  /* Optional: makes the image slightly transparent */
+}
+
+/* Rest of your existing styles remain the same */
+.form {
+  display: none;
+}
+
+.form header {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #00e676;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #2c2c2c;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form input:focus {
+  border-color: #00e676;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 230, 118, 0.5);
+}
+
+.form .button {
+  background: #00e676;
+  border: none;
+  color: #121212;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form .button:hover {
+  background: #00c853;
+}
+
+.switch-form {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.link {
+  color: #00e676;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.login {
+  display: block;
+}
