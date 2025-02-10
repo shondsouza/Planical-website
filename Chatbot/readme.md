@@ -1,5 +1,5 @@
-# **WebSocket Chatbot**  
-
+# Planical Chatbot**  
+![Image](https://github.com/user-attachments/assets/cf9f2f66-c576-40cd-8676-e16f1ead68e5)
 A simple WebSocket-based chatbot designed to provide **mental health support** by responding to user messages based on predefined keywords.  
 
 ## **Features**  
