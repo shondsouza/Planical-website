@@ -1,7 +1,3 @@
-Here's a **short README** for your chatbot:  
-
----
-
 # **WebSocket Chatbot**  
 
 A simple WebSocket-based chatbot designed to provide **mental health support** by responding to user messages based on predefined keywords.  
