@@ -1,36 +1,83 @@
+let socket = null;
+let isConnecting = false;
+let reconnectAttempts = 0;
+const MAX_RECONNECT_ATTEMPTS = 5;
+
+function connectWebSocket() {
+    if (socket !== null || isConnecting) return;
+
+    isConnecting = true;
+    try {
+        socket = new WebSocket("ws://localhost:8765");
+        
+        socket.onopen = function() {
+            isConnecting = false;
+            reconnectAttempts = 0;
+            console.log("WebSocket connection established");
+            socket.send("Connection established");
+        };
+
+        socket.onmessage = function(event) {
+            const botResponse = event.data;
+            displayMessage(botResponse, 'bot');
+        };
+
+        socket.onerror = function(error) {
+            console.error("WebSocket error:", error);
+            handleConnectionFailure();
+        };
+
+        socket.onclose = function(event) {
+            console.log("WebSocket connection closed");
+            handleConnectionFailure();
+        };
+    } catch (error) {
+        console.error("Failed to create WebSocket:", error);
+        handleConnectionFailure();
+    }
+}
+
+function handleConnectionFailure() {
+    isConnecting = false;
+    socket = null;
+
+    if (reconnectAttempts < MAX_RECONNECT_ATTEMPTS) {
+        reconnectAttempts++;
+        const delay = Math.min(1000 * Math.pow(2, reconnectAttempts), 30000);
+        console.log(`Attempting to reconnect in ${delay/1000} seconds... (Attempt ${reconnectAttempts})`);
+        setTimeout(connectWebSocket, delay);
+    } else {
+        console.error("Maximum reconnection attempts reached");
+        displayMessage("Unable to connect to server. Please refresh the page to try again.", 'bot');
+    }
+}
+
+window.addEventListener('load', connectWebSocket);
+
 document.getElementById('send-btn').addEventListener('click', sendMessage);
 
-// Add listener for Enter key
-document.getElementById('user-input').addEventListener('keydown', function (event) {
+document.getElementById('user-input').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         sendMessage();
     }
 });
 
-let socket = new WebSocket("ws://localhost:8765");
-
-socket.onmessage = function(event) {
-    const botResponse = event.data;
-    displayMessage(botResponse, 'bot');
-};
-
-// Function to handle message sending
 function sendMessage() {
     const userInput = document.getElementById('user-input').value.trim();
     
     if (userInput !== "") {
-        // Display user's message
         displayMessage(userInput, 'user');
-
-        // Clear the input field
         document.getElementById('user-input').value = '';
 
-        // Send user input to the backend via WebSocket
-        socket.send(userInput);
+        if (socket && socket.readyState === WebSocket.OPEN) {
+            socket.send(userInput);
+        } else {
+            displayMessage("Connecting to server...", 'bot');
+            connectWebSocket();
+        }
     }
 }
 
-// Function to display messages in the chat log
 function displayMessage(text, sender) {
     const chatLog = document.getElementById('chat-log');
     
@@ -39,7 +86,5 @@ function displayMessage(text, sender) {
     messageDiv.textContent = text;
     
     chatLog.appendChild(messageDiv);
-    
-    // Scroll to the bottom of the chat log
     chatLog.scrollTop = chatLog.scrollHeight;
 }
