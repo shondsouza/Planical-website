@@ -34,6 +34,3 @@ A simple WebSocket-based chatbot designed to provide **mental health support** b
 - Send messages containing words like **stress, anxiety, sadness** to get appropriate responses.  
 - If the input doesn't match predefined keywords, a general response is given.  
 
-## **Example Interaction**  
-**User:** *I'm feeling stressed today.*  
-**Bot:** *I hear you're feeling stressed. Try taking a deep breath.*  
