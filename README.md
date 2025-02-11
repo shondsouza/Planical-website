@@ -115,6 +115,3 @@ For support, please email shondsouza11@gmail.com or raise an issue in the reposi
 # Mindspace:
 https://github.com/user-attachments/assets/657c3849-a00c-4f49-9817-6dc367e389f0
 
-
-## Contributors
-
