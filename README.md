@@ -88,13 +88,7 @@ FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 FIREBASE_APP_ID=your_app_id
 ```
 
-## 🔒 Security
-
-- All communications are encrypted
-- User data is stored securely in Firebase Firestore
-- Regular security audits are performed
-- Compliance with healthcare data protection standards
-
+#
 
 ## 🤝 Contributing
 
