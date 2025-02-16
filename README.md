@@ -71,21 +71,4 @@ npm install
    - Add your Firebase configuration to `config/firebase.js`
    - Enable Firestore in your Firebase console
 
-4. Start the development server:
-```bash
-npm run dev
-```
-
-## 📝 Environment Variables
-
-Create a `.env` file in the root directory with the following variables:
-```
-FIREBASE_API_KEY=your_api_key
-FIREBASE_AUTH_DOMAIN=your_auth_domain
-FIREBASE_PROJECT_ID=your_project_id
-FIREBASE_STORAGE_BUCKET=your_storage_bucket
-FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-FIREBASE_APP_ID=your_app_id
-```
-
 
