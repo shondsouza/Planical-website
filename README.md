@@ -61,10 +61,7 @@ A comprehensive web-based platform designed to provide mental health support thr
 git clone [repository-url]
 ```
 
-2. Install dependencies:
-```bash
-npm install
-```
+
 
 3. Configure Firebase:
    - Create a Firebase project
