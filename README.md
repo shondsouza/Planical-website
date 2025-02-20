@@ -45,27 +45,6 @@ A comprehensive web-based platform designed to provide mental health support thr
   - Emergency resource recommendations
   - Seamless handoff to human professionals when needed
 
-### User Management
-- **Secure Authentication System**
-  - User account creation and management
-  - Personalized profiles
-  - Secure login/logout functionality
-  - Password recovery system
 
-
-
-## 🚀 Getting Started
-
-1. Clone the repository:
-```bash
-git clone [repository-url]
-```
-
-
-
-3. Configure Firebase:
-   - Create a Firebase project
-   - Add your Firebase configuration to `config/firebase.js`
-   - Enable Firestore in your Firebase console
 
 
