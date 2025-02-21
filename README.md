@@ -12,7 +12,6 @@ A comprehensive web-based platform designed to provide mental health support thr
 ![Solidity](https://img.shields.io/badge/Solidity-%23e2761b.svg?style=for-the-badge&logo=solidity&logoColor=white)
 ![React.js](https://img.shields.io/badge/React.js-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-%233178c6.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![Fast API](https://img.shields.io/badge/Fast%20API-%23000000.svg?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Radix UI](https://img.shields.io/badge/Radix%20UI-%233178c6.svg?style=for-the-badge&logo=radix-ui&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-%233776ab.svg?style=for-the-badge&logo=python&logoColor=white)
