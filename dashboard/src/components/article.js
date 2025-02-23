@@ -28,9 +28,9 @@ const Article = (props) => {
 }
 
 Article.defaultProps = {
-  rootClassName: '',
+  rootClassName: 'src/components/Blog1.html',
   button: 'Read ->',
-  buttonLink: '',
+  buttonLink: 'src/components/Blog1.html',
   description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
   header: 'TechCrunch',
