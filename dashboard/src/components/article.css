@@ -69,6 +69,12 @@
     line-height: 24px;
     text-decoration: none;
   }
+:root {
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-oneandhalfunits: 24px;
+  --dl-space-space-twounits: 32px;
+  --dl-space-space-threeunits: 48px;
+}
    
   
    
