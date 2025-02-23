@@ -209,7 +209,7 @@ const Home = (props) => {
       <section className="home-section15">
         <header className="home-header13">
           <header className="home-left1">
-            <span className="section-head">Tempor incididunt</span>
+            <span className="section-head">EXPERT CARE PROVIDERS</span>
             <h2 className="section-heading">
               <span>Meet our network</span>
               <br></br>
@@ -218,35 +218,44 @@ const Home = (props) => {
           </header>
           <div className="home-right1">
             <p className="home-paragraph4 section-description">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
+              Our carefully vetted network of mental health professionals ensures you receive high-quality, personalized
+              care when you need it most. Each provider is fully licensed and committed to your wellbeing..
             </p>
           </div>
         </header>
         <main className="home-cards1">
-          <Card rootClassName="cardroot-class-name"></Card>
           <Card
-            icon="/Icons/group 1314.png"
-            rootClassName="cardroot-class-name1"
-          ></Card>
+              header="24/7 Phone Support"
+              description="Access immediate mental health support through our secure phone line. Licensed professionals available round-the-clock for your needs."
+              icon="/Icons/group 1316.png"  // Phone icon
+              rootClassName="cardroot-class-name"
+          />
           <Card
-            icon="/Icons/group 1317.png"
-            rootClassName="cardroot-class-name2"
-          ></Card>
+              header="Global Online Access"
+              description="Connect with mental health professionals from anywhere in the world through our secure web platform. Break down geographical barriers to care."
+              icon="/Icons/group 1314.png"  // Globe/Internet icon
+              rootClassName="cardroot-class-name1"
+          />
+          <Card
+              header="Video Counseling"
+              description="Experience face-to-face therapy from the comfort of your home. High-quality video sessions with licensed therapists on your schedule."
+              icon="/Icons/group 1317.png"  // Video/Camera icon
+              rootClassName="cardroot-class-name2"
+          />
         </main>
       </section>
       <section className="home-section17">
         <div className="home-note4">
           <div className="home-image23">
             <img
-              alt="image"
-              src="/SectionImages/macbook.png"
-              className="home-image24"
+                alt="image"
+                src="/SectionImages/macbook.png"
+                className="home-image24"
             />
           </div>
           <div className="home-content5">
             <div className="home-caption5">
-              <span className="section-head">Tempor incididunt</span>
+              <span className="section-head">QUICK ACCESS GUIDE</span>
             </div>
             <div className="home-heading17">
               <div className="home-header14">
@@ -271,7 +280,7 @@ const Home = (props) => {
               Planical makes online doctor visits easier
             </h2>
             <p className="home-description1 section-description">
-              Lorem ipsum dolor sit amet!
+              Get instant mental health support through AI chat and connect with professionals anytime, anywhere.
             </p>
           </div>
           <div className="home-buttons2">
@@ -290,170 +299,18 @@ const Home = (props) => {
           <div className="home-front2 side"></div>
           <div className="home-left3 side"></div>
         </div>
-        <main className="home-pricing1">
-          <header className="home-header16">
-            <header className="home-left4">
-              <span className="section-head">Pricing</span>
-              <h2 className="section-heading home-heading20">
-                Start small, think big
-              </h2>
-            </header>
-            <div className="home-right2">
-              <p className="home-paragraph5 section-description">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
-              </p>
-            </div>
-          </header>
-          <div className="home-plans-container">
-            <div className="home-switch1">
-              <div className="switch">
-                <label className="home-text34">Monthly</label>
-              </div>
-              <div className="home-switch3 switch">
-                <label className="home-text35">Yearly</label>
-              </div>
-            </div>
-            <main className="home-plans">
-              <div className="home-plan1">
-                <div className="home-details1">
-                  <div className="home-header17">
-                    <label className="home-name1">Basic</label>
-                    <div className="home-pricing2">
-                      <h1 className="home-price1">$9</h1>
-                      <span className="home-duration1">/mo</span>
-                    </div>
-                  </div>
-                  <p className="home-description2">
-                    Good for sed quia consequuntur magni dolores eos qui
-                    ratione.
-                  </p>
-                </div>
-                <div className="home-buy-details1">
-                  <div className="home-buy1 button">
-                    <span className="home-text36">
-                      <span>Start Basic</span>
-                      <br></br>
-                    </span>
-                  </div>
-                  <div className="home-features2">
-                    <span className="home-heading21">You will get</span>
-                    <div className="home-list1">
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Excludes rootClassName="excludesroot-class-name"></Excludes>
-                      <Excludes rootClassName="excludesroot-class-name"></Excludes>
-                      <Excludes rootClassName="excludesroot-class-name"></Excludes>
-                      <Excludes rootClassName="excludesroot-class-name"></Excludes>
-                      <Excludes rootClassName="excludesroot-class-name"></Excludes>
-                      <Excludes rootClassName="excludesroot-class-name"></Excludes>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="home-plan2">
-                <div className="home-details2">
-                  <div className="home-header18">
-                    <label className="home-name2">Professional</label>
-                    <div className="home-pricing3">
-                      <h1 className="home-price2">$15</h1>
-                      <span className="home-duration2">/mo</span>
-                    </div>
-                  </div>
-                  <p className="home-description3">
-                    Good for sed quia consequuntur magni dolores eos qui
-                    ratione.
-                  </p>
-                </div>
-                <div className="home-buy-details2">
-                  <div className="home-buy2 button">
-                    <span className="home-text39">
-                      <span>Start Professional</span>
-                      <br></br>
-                    </span>
-                  </div>
-                  <div className="home-features3">
-                    <span className="home-heading22">You will get</span>
-                    <div className="home-list2">
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Excludes rootClassName="excludesroot-class-name"></Excludes>
-                      <Excludes rootClassName="excludesroot-class-name"></Excludes>
-                      <Excludes rootClassName="excludesroot-class-name"></Excludes>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="home-plan3">
-                <div className="home-details3">
-                  <div className="home-header19">
-                    <label className="home-name3">Enterprise</label>
-                    <div className="home-pricing4">
-                      <span className="home-price3">$99</span>
-                      <span className="home-duration3">/mo</span>
-                    </div>
-                  </div>
-                  <p className="home-description4">
-                    Good for sed quia consequuntur magni dolores eos qui
-                    ratione.
-                  </p>
-                </div>
-                <div className="home-buy-details3">
-                  <div className="home-buy3 button">
-                    <span className="home-text42">
-                      <span>Start Enterprise</span>
-                      <br></br>
-                    </span>
-                  </div>
-                  <div className="home-features4">
-                    <span className="home-heading23">You will get</span>
-                    <div className="home-list3">
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                      <Includes rootClassName="includesroot-class-name"></Includes>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </main>
-          </div>
-        </main>
-        <div className="home-help">
-          <span className="home-text45">
-            <span>Need any help?</span>
-            <br></br>
-          </span>
-          <div className="home-contact-support">
-            <p className="home-text48">Contact support -&gt;</p>
-          </div>
-        </div>
       </section>
       <section className="home-section22">
         <header className="home-header20">
           <header className="home-left5">
-            <span className="section-head">Tempor incididunt</span>
+            <span className="section-head">SUPPORTING YOUR JOURNEY</span>
             <h2 className="home-heading24 section-heading">
               What users say about us
             </h2>
           </header>
           <div className="home-right3">
             <p className="home-paragraph6 section-description">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
+              Our platform provides a safe space where you can find support, understanding, and professional guidance on your path to mental wellness. Join thousands of others who have taken their first step towards better mental health..
             </p>
           </div>
         </header>
@@ -461,29 +318,44 @@ const Home = (props) => {
           <div className="home-container2">
             <Review rootClassName="reviewroot-class-name"></Review>
             <Review
-              quote="“Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.\u2028\u2028Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.”"
-              rootClassName="reviewroot-class-name"
-            ></Review>
+                quote="I am a scientist, and science says mental health is important. Thanks to this platform, I can now tolerate Jethalal’s antics peacefully!"
+                author="Krishnan Iyer "
+                position="Scientist"
+                avatarSrc="https://feeds.abplive.com/onecms/images/uploaded-images/2022/12/30/896e647cfff76adbc5bcf1d22252cfa88b54c.jpg"
+                rootClassName="reviewroot-class-name"
+            />
           </div>
           <div className="home-container3">
             <Review
-              quote="“Illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”"
+              quote="Discipline and mental health go hand in hand! This platform helps me stay calm even when Tapu Sena is up to mischief."
+              author="Aatmaram Bhide"
+              position="Teacher & Secretary of Gokuldham Society"
+              avatarSrc="https://i.zoomtventertainment.com/story/Taarak_Mehta_Ka_Ooltah_Chashmah_February_20_Preview_0.jpg"
               rootClassName="reviewroot-class-name"
-            ></Review>
+            />
             <Review
-              quote="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.”"
-              rootClassName="reviewroot-class-name"
-            ></Review>
+                quote="Jetha calls me ‘fire brigade,’ but even I get stressed sometimes! This platform has restored my mental balance—now even my boss’s scoldings feel light!"
+                author="Taarak Mehta"
+                position="Writer & Employee"
+                avatarSrc="https://i.ytimg.com/vi/kNQlVGZ0fdE/sddefault.jpg"
+                rootClassName="reviewroot-class-name"
+            />
           </div>
           <div className="home-container4">
             <Review
-              quote="“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.”"
-              rootClassName="reviewroot-class-name"
-            ></Review>
+                quote="He Maa, Mataji! This platform is amazing! Just like Garba refreshes me, it has refreshed my mind! Even Tapu’s papa is calmer now, right?"
+                author="Daya Gada"
+                position="Homemaker"
+                avatarSrc="https://images.indianexpress.com/2022/05/disha-vakani-taarak-1200.jpg"
+                rootClassName="reviewroot-class-name"
+            />
             <Review
-              quote="“Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.”"
-              rootClassName="reviewroot-class-name"
-            ></Review>
+                quote="I’m still unmarried, but at least my stress is gone! This platform is the best cure for my tension. Whether I get married or not, at least I have mental peace"
+                author="Popatlal Pandey"
+                position="Senior Crime Reporter, Toofan Express"
+                avatarSrc="https://static.toiimg.com/thumb/msid-111680912,width-400,resizemode-4/111680912.jpg"
+                rootClassName="reviewroot-class-name"
+            />
           </div>
         </main>
         <div className="home-view-more">
