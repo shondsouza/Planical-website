@@ -66,15 +66,15 @@ const Accordion = (props) => {
 }
 
 Accordion.defaultProps = {
-  text2: 'Nemo enim ipsam voluptatem quia voluptas',
+  text2: 'What\'s the difference between the chatbot and professional chat?',
   text1:
-    'Sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam, quis nostrud',
-  text: 'Aliquam quaerat voluptatem',
-  text4: 'Magnam aliquam quaerat voluptatem',
+    'A 24/7 digital companion that provides immediate emotional support, coping strategies, and mental health guidance through supportive conversations.',
+  text: 'How does the mental health chatbot work?',
+  text4: 'What resources are available?',
   text5:
-    'Sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam, quis nostrud',
+    'We offer guided meditations, mood tracking, educational articles, coping tools, self-assessments, and crisis resources - all accessible anytime.',
   text3:
-    'Sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam, quis nostrud',
+    'The chatbot offers immediate 24/7 support and general guidance, while professional chat provides specialized advice from qualified mental health professionals.',
   rootClassName: '',
 }
 
