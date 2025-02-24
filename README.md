@@ -8,8 +8,6 @@ A comprehensive web-based platform designed to provide mental health support thr
 ## Tech Stacks
 
 ![Next.js](https://img.shields.io/badge/Next.js-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-%234ea94b.svg?style=for-the-badge&logo=supabase&logoColor=white)
-![Solidity](https://img.shields.io/badge/Solidity-%23e2761b.svg?style=for-the-badge&logo=solidity&logoColor=white)
 ![React.js](https://img.shields.io/badge/React.js-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-%233178c6.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
