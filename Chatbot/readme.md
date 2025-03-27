@@ -3,8 +3,7 @@
 A simple WebSocket-based chatbot designed to provide **mental health support** by responding to user messages based on predefined keywords.  
 
 ## **Features**  
-✅ Real-time communication via WebSockets  
-✅ Predefined responses for stress, anxiety, depression, and more  
+✅ Real-time communication via WebSockets   
 ✅ Maintains session-based conversation history  
 ✅ Handles user disconnects and session cleanup  
 
