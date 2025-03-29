@@ -21,7 +21,6 @@ A comprehensive web-based platform designed to provide mental health support thr
 ### Professional Support
 - **Real-Time Doctor-Client Chat**
   - Secure, private communication channels
-  - Instant messaging with mental health professionals
   - End-to-end encrypted conversations
   - Chat history preservation for continuity of care
 
