@@ -13,7 +13,7 @@ const FAQ = (props) => {
       >
         <div className="faq-details1">
           <span className="faq-text10">
-            What is sit amet, consectetur adipiscing elit, sed do?
+          What is Planical?
             <span
               dangerouslySetInnerHTML={{
                 __html: ' ',
@@ -21,11 +21,7 @@ const FAQ = (props) => {
             />
           </span>
           <span data-role="accordion-content" className="faq-text11">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id.
+          Planical is a mental health platform dedicated to helping individuals improve their well-being through expert guidance, self-help resources, therapy sessions, and mindfulness tools.
             <span
               dangerouslySetInnerHTML={{
                 __html: ' ',
@@ -45,15 +41,10 @@ const FAQ = (props) => {
       >
         <div className="faq-details2">
           <span className="faq-text12">
-            We&apos;ll update amet, consectetur adipiscing elit until
-            you&apos;re 100% happy.
+          Who can use Planical?
           </span>
           <span data-role="accordion-content" className="faq-text13">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id.
+          Anyone looking for mental health support, stress management techniques, or professional therapy can benefit from Planical. Our platform is designed for individuals of all ages seeking to improve their emotional and mental well-being.
             <span
               dangerouslySetInnerHTML={{
                 __html: ' ',
@@ -73,14 +64,10 @@ const FAQ = (props) => {
       >
         <div className="faq-details3">
           <span className="faq-text14">
-            Is it really sit amet, consectetur adipiscing elit, sed do?
+          Is Planical free to use?
           </span>
           <span data-role="accordion-content" className="faq-text15">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id.
+          Yes! Planical is completely free. All self-help articles, guided meditations, stress management exercises, and therapy sessions are available at no cost.
             <span
               dangerouslySetInnerHTML={{
                 __html: ' ',
@@ -100,15 +87,10 @@ const FAQ = (props) => {
       >
         <div className="faq-details4">
           <span className="faq-text16">
-            We work, what is sit amet, consectetur adipiscing elit, sed do sint
-            occaecat cupidatat non proident
+          Are the mental health resources free?
           </span>
           <span data-role="accordion-content" className="faq-text17">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id.
+          We offer a mix of free and premium resources. Some articles, self-help guides, and meditation exercises are free, while therapy sessions and advanced courses may require payment.
             <span
               dangerouslySetInnerHTML={{
                 __html: ' ',
@@ -128,7 +110,7 @@ const FAQ = (props) => {
       >
         <div className="faq-details5">
           <span className="faq-text18">
-            What is sit amet, consectetur adipiscing elit, sed do?
+          Is my personal information kept confidential?
             <span
               dangerouslySetInnerHTML={{
                 __html: ' ',
@@ -136,11 +118,7 @@ const FAQ = (props) => {
             />
           </span>
           <span data-role="accordion-content" className="faq-text19">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id.
+          Yes, we prioritize your privacy. All personal and therapy-related data is encrypted and kept confidential as per our privacy policy.
             <span
               dangerouslySetInnerHTML={{
                 __html: ' ',
@@ -160,14 +138,10 @@ const FAQ = (props) => {
       >
         <div className="faq-details6">
           <span className="faq-text20">
-            Amet, consectetur adipiscing elit mollit anim id est laborum.
+          What self-care tips do you recommend for better mental health?
           </span>
           <span data-role="accordion-content" className="faq-text21">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id.
+          To improve your mental well-being, maintain a regular sleep schedule, practice mindfulness and meditation, stay physically active, limit screen time and social media, and seek emotional support when needed.
             <span
               dangerouslySetInnerHTML={{
                 __html: ' ',
