@@ -200,7 +200,10 @@ const Home = (props) => {
                 </div>
               </main>
             </main>
-            <div className="home-get-started4 button">
+            <div className="home-get-started4 button"
+            onClick={() => window.open('http://localhost:3001', '_blank', 'noopener,noreferrer')}
+            style={{ cursor: 'pointer' }}
+            >
               <span className="home-text28">Get started</span>
             </div>
           </div>
@@ -310,7 +313,7 @@ const Home = (props) => {
           </header>
           <div className="home-right3">
             <p className="home-paragraph6 section-description">
-              Our platform provides a safe space where you can find support, understanding, and professional guidance on your path to mental wellness. Join thousands of others who have taken their first step towards better mental health..
+              Our platform provides a safe space where you can find support, understanding, & professional guidance on your path to mental wellness. Join thousands of others who have taken their first step towards better mental health..
             </p>
           </div>
         </header>
@@ -318,42 +321,42 @@ const Home = (props) => {
           <div className="home-container2">
             <Review rootClassName="reviewroot-class-name"></Review>
             <Review
-                quote="I am a scientist, and science says mental health is important. Thanks to this platform, I can now tolerate Jethalal’s antics peacefully!"
-                author="Krishnan Iyer "
-                position="Scientist"
-                avatarSrc="https://feeds.abplive.com/onecms/images/uploaded-images/2022/12/30/896e647cfff76adbc5bcf1d22252cfa88b54c.jpg"
+                quote="Planical has truly transformed my mental well-being. The guided meditation sessions help me stay calm & focused, even during hectic workdays. Highly recommend it!"
+                author="Rahul Mehta"
+                position="Marketing Consultant"
+                avatarSrc="https://plus.unsplash.com/premium_photo-1689977871600-e755257fb5f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 rootClassName="reviewroot-class-name"
             />
           </div>
           <div className="home-container3">
             <Review
-              quote="Discipline and mental health go hand in hand! This platform helps me stay calm even when Tapu Sena is up to mischief."
-              author="Aatmaram Bhide"
-              position="Teacher & Secretary of Gokuldham Society"
-              avatarSrc="https://i.zoomtventertainment.com/story/Taarak_Mehta_Ka_Ooltah_Chashmah_February_20_Preview_0.jpg"
+              quote="After managing my home-based catering business, I rely on Planical’s relaxation music to unwind. It’s my perfect escape for peace and calmness!"
+              author="Priya Patel"
+              position="Home Chef"
+              avatarSrc="https://images.unsplash.com/photo-1646979201277-aca83fa543c3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               rootClassName="reviewroot-class-name"
             />
             <Review
-                quote="Jetha calls me ‘fire brigade,’ but even I get stressed sometimes! This platform has restored my mental balance—now even my boss’s scoldings feel light!"
-                author="Taarak Mehta"
-                position="Writer & Employee"
-                avatarSrc="https://i.ytimg.com/vi/kNQlVGZ0fdE/sddefault.jpg"
+                quote="As a nurse, Planical has been a lifesaver. The stress management exercises help me stay calm and composed, even during demanding shifts. Highly recommend it!"
+                author="Sneha Kapoor"
+                position="Nurse"
+                avatarSrc="https://akm-img-a-in.tosshub.com/businesstoday/images/story/201610/shachi-irde_660_100516091558.jpg"
                 rootClassName="reviewroot-class-name"
             />
           </div>
           <div className="home-container4">
             <Review
-                quote="He Maa, Mataji! This platform is amazing! Just like Garba refreshes me, it has refreshed my mind! Even Tapu’s papa is calmer now, right?"
-                author="Daya Gada"
-                position="Homemaker"
-                avatarSrc="https://images.indianexpress.com/2022/05/disha-vakani-taarak-1200.jpg"
+                quote="Long coding hours used to leave me drained, but Planical’s mindfulness techniques have helped me tackle burnout and boost my productivity."
+                author="Arjun Iyer "
+                position="Software Engineer"
+                avatarSrc="https://plus.unsplash.com/premium_photo-1723154625709-cf9f084e5fcc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 rootClassName="reviewroot-class-name"
             />
             <Review
-                quote="I’m still unmarried, but at least my stress is gone! This platform is the best cure for my tension. Whether I get married or not, at least I have mental peace"
-                author="Popatlal Pandey"
-                position="Senior Crime Reporter, Toofan Express"
-                avatarSrc="https://static.toiimg.com/thumb/msid-111680912,width-400,resizemode-4/111680912.jpg"
+                quote="As a teacher, managing stress is essential. Thanks to Planical’s stress management exercises, I feel more composed and patient with my students."
+                author="Kavita Desai"
+                position="Teacher"
+                avatarSrc="https://plus.unsplash.com/premium_photo-1681483539443-50ced66c7f56?q=80&w=1988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 rootClassName="reviewroot-class-name"
             />
           </div>
@@ -437,7 +440,7 @@ const Home = (props) => {
                     className="home-branding"
                   />
                   <span className="home-text52">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Empowering minds, one step at a time. We provide resources, guidance, and support to help you prioritize your mental well-being.
                   </span>
                 </div>
                 <div className="home-socials">
@@ -485,12 +488,12 @@ const Home = (props) => {
                     <span className="footer-header">Solutions</span>
                   </div>
                   <div className="home-links1">
-                    <span className="footer-link">Responsive Web Design</span>
-                    <span className="footer-link">Responsive Prototypes</span>
-                    <span className="footer-link">Design to Code</span>
-                    <span className="footer-link">Static Website Builder</span>
+                    <span className="footer-link">Therapy Resources</span>
+                    <span className="footer-link">Guided Meditation</span>
+                    <span className="footer-link">Self-Care Tools</span>
+                    <span className="footer-link">Mood Tracking</span>
                     <span className="footer-link">
-                      Static Website Generator
+                    Mindfulness Exercises
                     </span>
                   </div>
                 </div>
@@ -499,19 +502,19 @@ const Home = (props) => {
                     <span className="footer-header">Company</span>
                   </div>
                   <div className="home-links2">
-                    <span className="footer-link">About</span>
-                    <span className="footer-link">Team</span>
-                    <span className="footer-link">News</span>
-                    <span className="footer-link">Partners</span>
-                    <span className="footer-link">Careers</span>
-                    <span className="footer-link">Press &amp; Media</span>
+                    <span className="footer-link">About Us</span>
+                    <span className="footer-link">Our Mission</span>
+                    <span className="footer-link">Success Stories</span>
+                    <span className="footer-link">Join Our Team</span>
+                    <span className="footer-link">Blog & Insights</span>
+                    <span className="footer-link">Contact Us</span>
                   </div>
                 </div>
               </header>
             </div>
             <section className="home-copyright1">
               <span className="home-text66">
-                © 2022 latitude. All Rights Reserved.
+              Copyright © 2025 Shon Dsouza. All Rights Reserved.
               </span>
             </section>
           </main>
@@ -540,7 +543,7 @@ const Home = (props) => {
           </main>
           <section className="home-copyright2">
             <span className="home-text71">
-              © 2022 latitude. All Rights Reserved.
+            Copyright © 2025 Planical. All Rights Reserved.
             </span>
           </section>
         </div>
