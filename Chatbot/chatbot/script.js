@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             avatarImg.src = 'images/icon.jpeg';
             avatarImg.alt = 'User';
         } else {
-            avatarImg.src = '/images/female.jpeg';
+            avatarImg.src = 'images/female.jpeg';
             avatarImg.alt = 'Doctor';
         }
         
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         avatarDiv.classList.add('avatar');
         
         const avatarImg = document.createElement('img');
-        avatarImg.src = '/images/female.jpeg';
+        avatarImg.src = 'images/female.jpeg';
         avatarImg.alt = 'Doctor';
         avatarDiv.appendChild(avatarImg);
         
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         try {
             // Send message to API
-            const response = await fetch('http://localhost:8000/chat', {
+            const response = await fetch('http://localhost:8001/chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
