@@ -7,20 +7,18 @@ from langchain_chroma import Chroma
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-
-
-load_dotenv()
-
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-CHROMA_DB_PATH = os.getenv("CHROMA_DB_PATH")
-DATA_PATH = os.getenv("DATA_PATH")
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import JSONResponse, Response
 
 # Load environment variables
 load_dotenv()
+
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+CHROMA_DB_PATH = os.getenv("CHROMA_DB_PATH", "./chroma_db")
+DATA_PATH = os.getenv("DATA_PATH", "./data")
 
 # Ensure API key is provided
 if not GROQ_API_KEY:
@@ -30,15 +28,11 @@ if not GROQ_API_KEY:
 def initialize_llm():
     return ChatGroq(
         temperature=0,
-        groq_api_key=GROQ_API_KEY,  # Use the environment variable
+        groq_api_key=GROQ_API_KEY,
         model_name="llama-3.3-70b-versatile"
     )
 
-
 # Create or load vector database
-DATA_PATH = "./data"
-DB_PATH = "./chroma_db"
-
 def create_vector_db():
     if not os.path.exists(DATA_PATH):
         os.makedirs(DATA_PATH)
@@ -50,18 +44,18 @@ def create_vector_db():
     texts = text_splitter.split_documents(documents)
     
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-    vector_db = Chroma.from_documents(texts, embeddings, persist_directory=DB_PATH)
+    vector_db = Chroma.from_documents(texts, embeddings, persist_directory=CHROMA_DB_PATH)
     vector_db.persist()
     
     print("✅ ChromaDB created and data saved")
     return vector_db
 
 # Initialize database
-if not os.path.exists(DB_PATH):
+if not os.path.exists(CHROMA_DB_PATH):
     vector_db = create_vector_db()
 else:
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-    vector_db = Chroma(persist_directory=DB_PATH, embedding_function=embeddings)
+    vector_db = Chroma(persist_directory=CHROMA_DB_PATH, embedding_function=embeddings)
 
 # Setup QA chain
 def setup_qa_chain(vector_db, llm):
@@ -87,33 +81,43 @@ def setup_qa_chain(vector_db, llm):
 llm = initialize_llm()
 qa_chain = setup_qa_chain(vector_db, llm)
 
-# Chatbot response function
-def chatbot_response(message, history):
-    if not message.strip():
-        return "⚠️ Please enter a valid message."
-    
-    response = qa_chain.run(message)
-    return response
-
-# Gradio Interface
+# FastAPI setup
 app = FastAPI()
 
+# Updated CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3001"],  # Adjust for production
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000", 
+        "http://localhost:3001",
+        "http://127.0.0.1:3001"
+    ],
     allow_credentials=True,
-    allow_methods=["*"],  # Allow all HTTP methods
-    allow_headers=["*"],  # Allow all headers
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization", "Accept"],
 )
+
+# Add static file serving for images
+os.makedirs("./images", exist_ok=True)
+app.mount("/images", StaticFiles(directory="./images"), name="images")
+
+# Add OPTIONS endpoint for CORS preflight requests
+@app.options("/chat")
+async def options_chat():
+    return Response(status_code=204)
 
 class ChatRequest(BaseModel):
     message: str
 
 @app.post("/chat")
 def chat(request: ChatRequest):
-    response = qa_chain.run(request.message)  # Now uses chatbot logic
-    return {"response": response}
-
+    try:
+        response = qa_chain.run(request.message)
+        return JSONResponse(content={"response": response})
+    except Exception as e:
+        print(f"Error processing request: {e}")
+        return JSONResponse(content={"response": "I'm sorry, I encountered an error processing your request."}, status_code=500)
 
 if __name__ == "__main__":
     import uvicorn
