@@ -1,6 +1,8 @@
+<div align="center">
+  <img src="chatbot/images/image.png" alt="Planical AI Chatbot Interface"/>
+</div>
 
 ##  About
-
 A modern, responsive mental health chatbot powered by Planical AI, featuring a beautiful user interface and advanced language model capabilities.
 
 ## Tech Stack
