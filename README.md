@@ -22,8 +22,7 @@ A comprehensive web-based platform designed to provide mental health support thr
 - **Real-Time Doctor-Client Chat**
   - Secure, private communication channels
   - End-to-end encrypted conversations
-  - Chat history preservation for continuity of care
-
+    
 ### Self-Help Resources
 - **Digital Library**
   - Curated collection of self-help books
