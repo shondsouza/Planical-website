@@ -30,16 +30,16 @@ A comprehensive web-based platform designed to provide mental health support thr
 ## Contributors
 
 <a href="https://github.com/shondsouza">
-  <img src="https://avatars.githubusercontent.com/u/143490544?v=4" width="60px" style="border-radius: 50%;" alt="shondsouza"/>
+  <img src="https://github.com/shondsouza.png" width="100" style="border-radius: 50%;" alt="Shon Dsouza"/>
 </a>
 <a href="https://github.com/godtrex">
-  <img src="https://avatars.githubusercontent.com/u/90237234?v=4" width="60px" style="border-radius: 50%;" alt="godtrex"/>
+  <img src="https://github.com/godtrex.png" width="100" style="border-radius: 50%;" alt="Harshith"/>
 </a>
 <a href="https://github.com/harshisalian">
-  <img src="https://avatars.githubusercontent.com/u/156963160?v=4" width="60px" style="border-radius: 50%;" alt="harshisalian"/>
+  <img src="https://github.com/harshisalian.png" width="100" style="border-radius: 50%;" alt="Harshisalian"/>
 </a>
 <a href="https://github.com/diyabhandary">
-  <img src="https://avatars.githubusercontent.com/u/173941086?v=4" width="60px" style="border-radius: 50%;" alt="diyabhandary"/>
+  <img src="https://github.com/diyabhandary.png" width="100" style="border-radius: 50%;" alt="Diyabhandary"/>
 </a>
 
 
