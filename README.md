@@ -26,3 +26,21 @@ A comprehensive web-based platform designed to provide mental health support thr
   - Easy-to-navigate categorization
   - Practical mental health guides
   - Daily wellness tips and exercises
+    
+## Contributors
+
+<a href="https://github.com/shondsouza">
+  <img src="https://avatars.githubusercontent.com/u/143490544?v=4" width="60px" style="border-radius: 50%;" alt="shondsouza"/>
+</a>
+<a href="https://github.com/godtrex">
+  <img src="https://avatars.githubusercontent.com/u/90237234?v=4" width="60px" style="border-radius: 50%;" alt="godtrex"/>
+</a>
+<a href="https://github.com/harshisalian">
+  <img src="https://avatars.githubusercontent.com/u/156963160?v=4" width="60px" style="border-radius: 50%;" alt="harshisalian"/>
+</a>
+<a href="https://github.com/diyabhandary">
+  <img src="https://avatars.githubusercontent.com/u/173941086?v=4" width="60px" style="border-radius: 50%;" alt="diyabhandary"/>
+</a>
+
+
+
