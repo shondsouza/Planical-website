@@ -24,7 +24,6 @@ A comprehensive web-based platform designed to provide mental health support thr
 ### Self-Help Resources
 - **Digital Library**
   - Easy-to-navigate categorization
-  - Practical mental health guides
   - Daily wellness tips and exercises
     
 ## Contributors
